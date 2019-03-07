@@ -4,13 +4,16 @@
 var labs = require('../labs.json');
 
 exports.view = function(req, res){
+	console.log
   if(labs.length < 9) {
-  	var todaysLab = [{
-		"id": "lab-9",
-		"title": "Debugging 101",
-		"date": "March 7",
-		"image": "debug.png"
-	}];
+  	var todaysLab = [
+			{
+				"id": "lab-9",
+				"title": "Debugging 101",
+				"date": "March 7",
+				"image": "debug.png"
+			}
+		];
 
   	labs.push(todaysLab);
   }
